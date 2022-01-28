@@ -1,0 +1,67 @@
+[
+  {
+    "class": 7,
+    "questions": [
+      {
+        "id": 0,
+        "category": "boolean",
+        "content": [
+          "Soarele este o stea",
+          "Soarele este o stea",
+          "Soarele este o stea \"Soarele este o stea\",\"Soarele este o stea\",\"Soarele este o stea\",\"Soarele este o stea\","
+        ],
+        "module": "Astronomie"
+      },
+      {
+        "id": 1,
+        "category": "boolean",
+        "content": "Soarele nu este o stea",
+        "module": "Astronomie"
+      },
+      {
+        "id": 3,
+        "category": "boolean",
+        "content": "Soarele este o steaSoarele este o steaSoarele este o steaSoarele este o steaSoarele este o stea",
+        "module": "Astronomie"
+      },
+      {
+        "id": 4,
+        "category": "complete",
+        "content": "Un an bisect are % zile",
+        "module": "Astronomie"
+      },
+      {
+        "id": 5,
+        "category": "complete",
+        "content": "Soarele este o stea %%%",
+        "module": "Astronomie"
+      },
+      {
+        "id": 6,
+        "category": "corespondence",
+        "variables": "var1, var2, var3, var4,",
+        "variant": " unit1, unit2, unit3, unit4, unit5"
+      },
+      {
+        "id": 7,
+        "category": "problem2",
+        "content": "Soarele este o steaSoarele este o steaSoarele este o steaSoarele este o steaSoarele este o stea",
+        "module": "Astronomie",
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvjWgxTPqbAqpLZB95y0GEk08z2fMA646ol53m85WM2HK7UdDJhVtrEPokCw6CPuk9TI&usqp=CAU"
+      },
+      {
+        "id": 8,
+        "category": "problem1",
+        "content": "Soarele este o steaSoarele este o steaSoarele este o steaSoarele este o steaSoarele este o stea",
+        "module": "Astronomie",
+        "imageUrl": ""
+      }
+    ]
+  },
+  {
+    "class": 8
+  },
+  {
+    "class": 9
+  }
+]
