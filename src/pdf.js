@@ -92,10 +92,30 @@ export const MyDocument = () => (
   <Document style={{margin: 0, padding: 0}}>
     <Page size="A4" style={styles.page}>
       <View>
-        <Text>Disciplina: Fizica. Clasa: VII-a __. Nume prenume: ______________________. Data: ________.
-          Punctaj total: 39. Punctaj acumulat: ____. Nota: ___________. Semnatura profesorului: ______
-          Unitatea {data[0].questions[0].module}</Text>
-        <Text>{'\n\n'}</Text>
+        <View style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: 10,
+            paddingLeft:15,
+            paddingRight: 15
+        }}>
+          <Text>Disciplina: Fizica</Text>
+          <Text>Clasa a VII-a </Text>
+        </View>
+        <View style={{flexDirection: "row", justifyContent: "space-between", marginBottom: 10, fontSize: 12}}>
+          <Text>Nume, prenume student: __________________</Text>
+          <Text>Punctaj acumulat:_____ </Text>
+          <Text>Nota: _____</Text>
+        </View>
+        <View style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginBottom: 10, fontSize: 12, color: 'red',
+        }}>
+          <Text>Nume, prenume profesor: __________________</Text>
+          <Text>Semnatura ______________</Text>
+        </View>
+
         <View style={styles.table}>
           <View style={styles.tableRow}>
             <Text style={styles.cellD}>Nr.</Text>
@@ -154,7 +174,7 @@ export const MyDocument = () => (
             )
           }
         </View>
-        <Text >Enache Alic, profesor de fizica</Text>
+        <Text style={{color: 'grey'}}>Enache Alic, profesor de fizica</Text>
       </View>
     </Page>
   </Document>

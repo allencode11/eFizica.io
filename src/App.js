@@ -27,7 +27,7 @@ export const App = () => {
     <>
       <PDFViewer style={{
         width: "50%",
-        height: "100vh"
+        height: "100vh",
       }}>
         <MyDocument/>
       </PDFViewer>
