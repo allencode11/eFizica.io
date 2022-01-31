@@ -45,7 +45,12 @@ export const DocTable = () => (
               </>
             ) : element.category === 'problem2' ? (
               <>
-                <View style={styles.midddleCell}>
+                <View style={styles.middleCell}>
+                  {
+                    rules.filter(ruleElement => ruleElement.name === 'problem2').map(item => (
+                      <Text style={styles.condition}>{item.rule}</Text>
+                    ))
+                  }
                   <Text>{element.content}</Text>
                   <Image
                     src={element.imageUrl}
