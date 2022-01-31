@@ -8,7 +8,7 @@ export const DocTable = () => (
   <View style={styles.table}>
     <View style={styles.tableRow}>
       <Text style={styles.cellD}>Nr.</Text>
-      <Text style={styles.midlleCellD}>Item</Text>
+      <Text style={styles.middleCellD}>Item</Text>
       <Text style={styles.cellD}>Scor</Text>
     </View>
     {
@@ -18,10 +18,10 @@ export const DocTable = () => (
           {
             element.category === 'complete' ? (
               <>
-                <View style={styles.midlleCell}>
+                <View style={styles.middleCell}>
                   {
                     rules.filter(ruleElement => ruleElement.name === 'complete').map(item => (
-                      <Text style={{fontFamily: 'Roboto', fontWeight: 'bold', marginBottom: 6}}>{item.rule}</Text>
+                      <Text style={styles.condition}>{item.rule}</Text>
                     ))
                   }
                   <Text style={{fontFamily: 'Roboto', fontWeight: 'normal'}}>{element.content.replaceAll('%', '________________ ')}</Text>
@@ -30,15 +30,22 @@ export const DocTable = () => (
               </>
             ) : element.category === 'corespondence' ? (
               <>
-                <View style={styles.middlleCellVar}>
-                  <Text style={styles.varCell}>{element.variables.replaceAll(',', '-\n')}</Text>
-                  <Text style={styles.varCell}>{element.variant.replaceAll(' ', '-').replaceAll(',', '\n')}</Text>
+                <View style={styles.middleCell}>
+                  {
+                    rules.filter(ruleElement => ruleElement.name === 'corespondence').map(item => (
+                      <Text style={styles.condition}>{item.rule}</Text>
+                    ))
+                  }
+                  <View style={styles.middleCellVar}>
+                    <Text style={styles.varCell}>{element.variables.replaceAll(',', '-\n')}</Text>
+                    <Text style={styles.varCell}>{element.variant.replaceAll(' ', '-').replaceAll(',', '\n')}</Text>
+                  </View>
                 </View>
                 <Text style={styles.cell}>L 0 1 2 3 4 </Text>
               </>
             ) : element.category === 'problem2' ? (
               <>
-                <View style={styles.middlleCell}>
+                <View style={styles.midddleCell}>
                   <Text>{element.content}</Text>
                   <Image
                     src={element.imageUrl}
@@ -50,7 +57,7 @@ export const DocTable = () => (
               </>
             ) : element.category === 'problem1' ? (
               <>
-                <View style={styles.middlleCell}>
+                <View style={styles.midddleCell}>
                   <Text>{element.content}</Text>
                   <Text>{'\n\n\n\n\n\n'}</Text>
                 </View>
@@ -58,7 +65,7 @@ export const DocTable = () => (
               </>
             ) : element.category === 'boolean' ? (
               <>
-                <View style={styles.middlleCellVar}>
+                <View style={styles.midddleCellVar}>
                   <Text style={styles.questionCell}>{element.content}</Text>
                   <Text style={styles.answerCell}> A F </Text>
                 </View>

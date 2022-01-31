@@ -48,25 +48,24 @@ export const styles = StyleSheet.create({
     paddingRight: 20,
     textAlign: 'center',
   },
-  midlleCellD: {
+  middleCellD: {
     width: 500,
     textAlign: 'center',
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
   },
-  midlleCell: {
+  middleCell: {
     width: 500,
     padding: 6,
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
   },
-  midlleCellVar: {
+  middleCellVar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    width: 500,
+    width: 400,
     padding: 6,
-    borderRight: '2px solid black',
-    borderLeft: '2px solid black',
+    alignSlef: 'center'
   },
   varCell: {
     width: 225,
@@ -82,7 +81,7 @@ export const styles = StyleSheet.create({
     width: 150,
     height: 'auto',
   },
-  midlleCellBool: {
+  middleCellBool: {
     flexDirection: 'row',
     width: 500,
     paddingLeft: 6,
@@ -93,4 +92,9 @@ export const styles = StyleSheet.create({
   boolQ:{
     width: 450,
   },
+  condition: {
+    fontFamily: 'Roboto',
+    fontWeight: 'bold',
+    marginBottom: 6
+  }
 });
