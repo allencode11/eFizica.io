@@ -36,6 +36,8 @@ export const styles = StyleSheet.create({
     border: '1px solid black',
     justifyContent: 'center',
     alignContent: 'center',
+    fontSize: '12',
+    fontFamily: 'RobotoNormal'
   },
   cellD: {
     width: 60,
@@ -60,7 +62,7 @@ export const styles = StyleSheet.create({
     padding: 6,
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
-    fontSize: '15',
+    fontSize: '12',
   },
   middlleCellVar: {
     flexDirection: 'row',
