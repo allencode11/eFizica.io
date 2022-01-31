@@ -12,7 +12,7 @@ export const MyDocument = () => (
   <Document style={{margin: 0, padding: 0}}>
     <Page size="A4" style={styles.page}>
       <View>
-        <DocHeader />
+        <DocHeader str={'Astronomie'}/>
 
         <DocTable />
 

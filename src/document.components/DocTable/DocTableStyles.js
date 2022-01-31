@@ -40,6 +40,7 @@ export const styles = StyleSheet.create({
   cellD: {
     width: 60,
     textAlign: 'center',
+    fontSize: '15',
   },
   cell: {
     width: 60,
@@ -47,12 +48,14 @@ export const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     textAlign: 'center',
+    fontSize: '15',
   },
   middleCellD: {
     width: 500,
     textAlign: 'center',
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
+    fontSize: '15',
   },
   middleCell: {
     width: 500,

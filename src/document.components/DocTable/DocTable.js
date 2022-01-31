@@ -57,7 +57,12 @@ export const DocTable = () => (
               </>
             ) : element.category === 'problem1' ? (
               <>
-                <View style={styles.midddleCell}>
+                <View style={styles.middleCell}>
+                  {
+                    rules.filter(ruleElement => ruleElement.name === 'problem1').map(item => (
+                      <Text style={styles.condition}>{item.rule}</Text>
+                    ))
+                  }
                   <Text>{element.content}</Text>
                   <Text>{'\n\n\n\n\n\n'}</Text>
                 </View>
@@ -65,9 +70,20 @@ export const DocTable = () => (
               </>
             ) : element.category === 'boolean' ? (
               <>
-                <View style={styles.midddleCellVar}>
-                  <Text style={styles.questionCell}>{element.content}</Text>
-                  <Text style={styles.answerCell}> A F </Text>
+                <View style={styles.middleCell}>
+                  {
+                    rules.filter(ruleElement => ruleElement.name === 'boolean').map(item => (
+                      <Text style={styles.condition}>{item.rule}</Text>
+                    ))
+                  }
+                  {
+                    element.content.map(item => (
+                      <View style={{flexDirection: 'row'}}>
+                        <Text style={styles.questionCell}>{item}</Text>
+                        <Text style={styles.answerCell}> A F </Text>
+                      </View>
+                    ))
+                  }
                 </View>
                 <Text style={styles.cell}>L 0 1 2 3 </Text>
               </>

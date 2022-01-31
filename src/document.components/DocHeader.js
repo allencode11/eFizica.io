@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from '@react-pdf/renderer';
 
-export const DocHeader = () => (
+export const DocHeader = (str) => (
   <View>
     <View style={{
       flexDirection: "row",
@@ -17,8 +17,9 @@ export const DocHeader = () => (
       <Text>Nume, prenume student: __________________</Text>
       <Text>Punctaj acumulat:_____ </Text>
       <Text>Nota: _____</Text>
-    </View>
 
+    </View>
+    <Text style={{fontSize: 12, marginBottom: 12}}>Unitatea: Astronomie</Text>
     <View style={{
       flexDirection: "row",
       justifyContent: "space-between",
@@ -27,6 +28,7 @@ export const DocHeader = () => (
       <Text>Nume, prenume profesor: __________________</Text>
       <Text>Semnatura ______________</Text>
     </View>
+
   </View>
 )
 
