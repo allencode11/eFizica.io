@@ -3,6 +3,7 @@ import React from 'react';
 import { styles } from './DocTableStyles';
 import data from '../../jsonData/data.json';
 import rules from '../../jsonData/quest.json';
+import image from '../../assets/Screenshot.png';
 
 export const DocTable = () => (
   <View style={styles.table}>
@@ -24,7 +25,7 @@ export const DocTable = () => (
                       <Text style={styles.condition}>{item.rule}</Text>
                     ))
                   }
-                  <Text style={{fontFamily: 'Roboto', fontWeight: 'normal'}}>{element.content.replaceAll('%', '________________ ')}</Text>
+                  <Text style={ styles.content }>{element.content.replaceAll('%', '________________ ')}</Text>
                 </View>
                 <Text style={styles.cell}>L 0 1 2 3 </Text>
               </>
@@ -37,8 +38,8 @@ export const DocTable = () => (
                     ))
                   }
                   <View style={styles.middleCellVar}>
-                    <Text style={styles.varCell}>{element.variables.replaceAll(',', '-\n')}</Text>
-                    <Text style={styles.varCell}>{element.variant.replaceAll(' ', '-').replaceAll(',', '\n')}</Text>
+                    <Text style={styles.varCell}>{element.variables.replaceAll(',', ' -\n')}</Text>
+                    <Text style={styles.varCell}>{element.variant.replaceAll(' ', '  -').replaceAll(',', '\n')}</Text>
                   </View>
                 </View>
                 <Text style={styles.cell}>L 0 1 2 3 4 </Text>
@@ -53,8 +54,11 @@ export const DocTable = () => (
                   }
                   <Text>{element.content}</Text>
                   <Image
-                    src={element.imageUrl}
-                    style={styles.image}
+                    src={image}
+                    style={{
+                      width: element.size,
+                      height: 'auto',
+                    }}
                   />
                   <Text>{'\n\n\n\n'}</Text>
                 </View>
@@ -68,7 +72,7 @@ export const DocTable = () => (
                       <Text style={styles.condition}>{item.rule}</Text>
                     ))
                   }
-                  <Text>{element.content}</Text>
+                  <Text style={styles.condition}>{element.content}</Text>
                   <Text>{'\n\n\n\n\n\n'}</Text>
                 </View>
                 <Text style={styles.cell}>L 0 1 2 3</Text>

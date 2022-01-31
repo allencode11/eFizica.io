@@ -24,6 +24,7 @@ export const styles = StyleSheet.create({
     paddingLeft: 50,
     paddingTop: 30,
     paddingBottom: 30,
+    fontFamily: 'Roboto',
   },
   table: {
     flexDirection: 'column',
@@ -49,6 +50,8 @@ export const styles = StyleSheet.create({
     paddingRight: 20,
     textAlign: 'center',
     fontSize: '15',
+    fontFamily: 'Roboto',
+    fontWeight: 'light',
   },
   middleCellD: {
     width: 500,
@@ -73,9 +76,11 @@ export const styles = StyleSheet.create({
   varCell: {
     width: 225,
     textAlign: 'center',
+    fontFamily: 'Roboto',
   },
   questionCell: {
     width: 400,
+    fontFamily: 'Roboto',
   },
   answerCell: {
     width: 50,
@@ -99,5 +104,9 @@ export const styles = StyleSheet.create({
     fontFamily: 'Roboto',
     fontWeight: 'bold',
     marginBottom: 6
+  },
+  content: {
+    fontFamily: 'Roboto',
+    fontWeight: 'normal'
   }
 });

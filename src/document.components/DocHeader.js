@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text, View } from '@react-pdf/renderer';
+import data from '../jsonData/data.json';
+import { styles} from './DocTable/DocTableStyles';
 
 export const DocHeader = (str) => (
   <View>
@@ -19,7 +21,7 @@ export const DocHeader = (str) => (
       <Text>Nota: _____</Text>
 
     </View>
-    <Text style={{fontSize: 12, marginBottom: 12}}>Unitatea: Astronomie</Text>
+    <Text style={styles.content}>{ 'Unitatea:' + data[0].module}</Text>
     <View style={{
       flexDirection: "row",
       justifyContent: "space-between",

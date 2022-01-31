@@ -11,7 +11,7 @@
       {
         "id": 1,
         "category": "corespondence",
-        "variables": "presiunea hidrosferică, Densitatea lichidului, Înălțimea, Accelerația gravitațională, Volumul,",
+        "variables": "Presiunea hidrosferică, Densitatea lichidului, Înălțimea, Accelerația gravitațională, Volumul,",
         "variant": " cm, kg/m3, m3, N·m, MPa, N/kg,"
       },
       {
