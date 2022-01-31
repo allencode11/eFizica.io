@@ -1,23 +1,22 @@
 import { StyleSheet, Font } from '@react-pdf/renderer';
 
 Font.register({
-    family: "RobotoBold",
-    src:
-      "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-bold-webfont.ttf",
-    fontWeight: 'bold',
-  },
-  {
-    family: "RobotoNormal",
-    src:
-      "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-normal-webfont.ttf",
-    fontWeight: 'normal',
-  },
-  {
-    family: "RobotoLight",
-    src:
-      "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-light-webfont.ttf",
-    fontWeight: 'light',
-  });
+  family: "Roboto",
+  fonts:[
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-bold-webfont.ttf",
+      fontWeight: 'bold',
+    },
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-regular-webfont.ttf",
+      fontWeight: 'normal',
+    },
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/fonts/Roboto/roboto-light-webfont.ttf",
+      fontWeight: 'light',
+    }
+  ]
+})
 
 export const styles = StyleSheet.create({
   page: {
@@ -37,7 +36,6 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignContent: 'center',
     fontSize: '12',
-    fontFamily: 'RobotoNormal'
   },
   cellD: {
     width: 60,
@@ -48,30 +46,27 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingLeft: 20,
     paddingRight: 20,
-    fontSize: '15',
     textAlign: 'center',
   },
-  middlleCellD: {
+  midlleCellD: {
     width: 500,
     textAlign: 'center',
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
   },
-  middlleCell: {
+  midlleCell: {
     width: 500,
     padding: 6,
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
-    fontSize: '12',
   },
-  middlleCellVar: {
+  midlleCellVar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: 500,
     padding: 6,
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
-    fontSize: '15',
   },
   varCell: {
     width: 225,
@@ -87,14 +82,13 @@ export const styles = StyleSheet.create({
     width: 150,
     height: 'auto',
   },
-  middlleCellBool: {
+  midlleCellBool: {
     flexDirection: 'row',
     width: 500,
     paddingLeft: 6,
     paddingRight: 6,
     borderRight: '2px solid black',
     borderLeft: '2px solid black',
-    fontSize: '15',
   },
   boolQ:{
     width: 450,

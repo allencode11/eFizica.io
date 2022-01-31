@@ -2,12 +2,13 @@ import { Image, Text, View } from '@react-pdf/renderer';
 import React from 'react';
 import { styles } from './DocTableStyles';
 import data from '../../jsonData/data.json';
+import rules from '../../jsonData/quest.json';
 
 export const DocTable = () => (
   <View style={styles.table}>
     <View style={styles.tableRow}>
       <Text style={styles.cellD}>Nr.</Text>
-      <Text style={styles.middlleCellD}>Item</Text>
+      <Text style={styles.midlleCellD}>Item</Text>
       <Text style={styles.cellD}>Scor</Text>
     </View>
     {
@@ -17,7 +18,14 @@ export const DocTable = () => (
           {
             element.category === 'complete' ? (
               <>
-                <Text style={styles.middlleCell}>{element.content.replaceAll('%', '________________ ')}</Text>
+                <View style={styles.midlleCell}>
+                  {
+                    rules.filter(ruleElement => ruleElement.name === 'complete').map(item => (
+                      <Text style={{fontFamily: 'Roboto', fontWeight: 'bold', marginBottom: 6}}>{item.rule}</Text>
+                    ))
+                  }
+                  <Text style={{fontFamily: 'Roboto', fontWeight: 'normal'}}>{element.content.replaceAll('%', '________________ ')}</Text>
+                </View>
                 <Text style={styles.cell}>L 0 1 2 3 </Text>
               </>
             ) : element.category === 'corespondence' ? (
