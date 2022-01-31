@@ -5,7 +5,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
-const data = require('./data.json');
+const data = require('./jsonData/data.json');
 
 const ItemsList = () => {
 
